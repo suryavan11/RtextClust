@@ -26,13 +26,12 @@ library(tidyverse)
 seed = 80
 options(scipen=999) 
 options(future.globals.maxSize = +Inf) 
-#setwd('C:/Users/ASuryav1/OneDrive - T-Mobile USA/Abhi R packages/RtextClust')
-setwd('C:/Users/asuryav1/OneDrive - T-Mobile USA/for Farhan Rizvi')
-source('R/utils_v12.R')
+setwd('...')
+source('utils.R')
 
 #### read and preprocess data ########################
 stopwords_longlist = stopwords('en')
-df = read_delim('C:/Users/asuryav1/OneDrive - T-Mobile USA/for Farhan Rizvi/slack_data_20201014/T-Mobile Slack export Jul 1 2020 - Oct 9 2020/teams/TMUS-Care-tmus-care/cleaned_data.text', delim = '|')
+df = read_delim('...', delim = '|')
 df$endoffset = 1 
 # df = df[1:1000,]
 
